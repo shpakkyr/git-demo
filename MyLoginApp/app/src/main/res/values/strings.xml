@@ -1,0 +1,11 @@
+<resources>
+    <string name="account">Account</string>
+    <string name="label_icon">Label icon</string>
+    <string name="activities">Activities</string>
+    <string name="challenges">Challenges for me</string>
+    <string name="assets">Assets management</string>
+    <string name="cupx">CUPX Exchange rates</string>
+    <string name="list">List of activities</string>
+    <string name="browse">Browse</string>
+    <string name="manage">Manage</string>
+</resources>

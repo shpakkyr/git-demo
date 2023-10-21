@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="49dp"
+        android:src="@drawable/label"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="62dp"
+        android:contentDescription="@string/label_icon"
+        />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/img"
+        android:layout_marginTop="76dp"
+        android:layout_marginStart="370dp"
+        android:contentDescription="@string/label_icon"
+        />
+
+    <FrameLayout
+        android:layout_width="342dp"
+        android:layout_height="178dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="152dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/account"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/profileInfo"
+                android:contentDescription="@string/label_icon"
+                />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="1000dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="350dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/activitiesText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activities"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/activitiesButton"
+                android:layout_width="100dp"
+                android:layout_height="21dp"
+                android:text="@string/list"
+                android:background="@drawable/button"
+                android:textColor="@color/Blue"
+                android:textSize="11dp"
+                android:textStyle="bold"
+                android:padding="0dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="118dp"
+                android:layout_height="118dp"
+                android:src="@drawable/carpooling"
+                app:layout_constraintTop_toBottomOf="@+id/activitiesText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                android:contentDescription="@string/label_icon"
+                />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="118dp"
+                android:layout_height="118dp"
+                android:src="@drawable/delittering"
+                app:layout_constraintTop_toBottomOf="@+id/activitiesText"
+                app:layout_constraintStart_toEndOf="@+id/imageView1"
+                app:layout_constraintEnd_toStartOf="@+id/imageView3"
+                android:contentDescription="@string/label_icon"/>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="118dp"
+                android:layout_height="118dp"
+                android:src="@drawable/transport"
+                app:layout_constraintTop_toBottomOf="@+id/activitiesText"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:contentDescription="@string/label_icon"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="511dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/challengeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/challenges"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/browseButton"
+                android:layout_width="100dp"
+                android:layout_height="21dp"
+                android:text="@string/browse"
+                android:background="@drawable/button"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:textColor="@color/Blue"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:padding="0dp"
+                android:layout_marginTop="5px"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/artView1"
+                android:layout_width="118dp"
+                android:layout_height="118dp"
+                android:src="@drawable/art"
+                app:layout_constraintTop_toBottomOf="@+id/challengeText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/helpView2"
+                android:contentDescription="@string/label_icon"
+                />
+
+            <ImageView
+                android:id="@+id/helpView2"
+                android:layout_width="118dp"
+                android:layout_height="118dp"
+                android:src="@drawable/help"
+                app:layout_constraintTop_toBottomOf="@+id/challengeText"
+                app:layout_constraintStart_toEndOf="@+id/artView1"
+                app:layout_constraintEnd_toStartOf="@+id/strideView3"
+                android:contentDescription="@string/label_icon"/>
+
+            <ImageView
+                android:id="@+id/strideView3"
+                android:layout_width="118dp"
+                android:layout_height="118dp"
+                android:src="@drawable/stride"
+                app:layout_constraintTop_toBottomOf="@+id/challengeText"
+                app:layout_constraintStart_toEndOf="@+id/helpView2"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:contentDescription="@string/label_icon"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="682dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/assetsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/assets"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/manageButton"
+                android:layout_width="100dp"
+                android:layout_height="21dp"
+                android:text="@string/manage"
+                android:background="@android:color/transparent"
+                android:textColor="@color/Blue"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:padding="0dp"
+                android:layout_marginTop="2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="715dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+        android:background="@color/Grey"
+        android:layout_gravity="top" />
+
+            <TextView
+                android:id="@+id/ratesText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cupx"
+                android:textSize="12sp"
+                android:textColor="@color/Grey"
+                android:layout_marginTop="7dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/tether"
+            />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/tether"
+            />
+
+    </FrameLayout>
+
+
+
+</RelativeLayout>
