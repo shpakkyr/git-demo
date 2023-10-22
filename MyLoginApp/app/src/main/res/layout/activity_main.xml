@@ -42,7 +42,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/profileInfo"
+                android:src="@drawable/profileinfo"
                 android:contentDescription="@string/label_icon"
                 />
 
@@ -70,14 +70,15 @@
 
             <Button
                 android:id="@+id/activitiesButton"
-                android:layout_width="100dp"
+                android:layout_width="85dp"
                 android:layout_height="21dp"
                 android:text="@string/list"
                 android:background="@drawable/button"
                 android:textColor="@color/Blue"
-                android:textSize="11dp"
-                android:textStyle="bold"
+                android:textSize="11sp"
+                android:textStyle="normal"
                 android:padding="0dp"
+                android:layout_marginEnd="15dp"
                 android:layout_marginTop="4dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -138,16 +139,16 @@
 
             <Button
                 android:id="@+id/browseButton"
-                android:layout_width="100dp"
+                android:layout_width="85dp"
                 android:layout_height="21dp"
                 android:text="@string/browse"
                 android:background="@drawable/button"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:textColor="@color/Blue"
                 android:textSize="11sp"
-                android:textStyle="bold"
+                android:textStyle="normal"
                 android:padding="0dp"
-                android:layout_marginTop="5px"
+                android:layout_marginTop="2dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -186,78 +187,18 @@
     </FrameLayout>
 
     <FrameLayout
-        android:layout_width="380dp"
+        android:layout_width="370dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="682dp">
+        android:layout_marginTop="615dp">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/assetsText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/assets"
-                android:textStyle="bold"
-                android:textSize="18sp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <Button
-                android:id="@+id/manageButton"
-                android:layout_width="100dp"
-                android:layout_height="21dp"
-                android:text="@string/manage"
-                android:background="@android:color/transparent"
-                android:textColor="@color/Blue"
-                android:textSize="11sp"
-                android:textStyle="bold"
-                android:padding="0dp"
-                android:layout_marginTop="2dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </FrameLayout>
-
-    <FrameLayout
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="715dp">
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-        android:background="@color/Grey"
-        android:layout_gravity="top" />
-
-            <TextView
-                android:id="@+id/ratesText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/cupx"
-                android:textSize="12sp"
-                android:textColor="@color/Grey"
-                android:layout_marginTop="7dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:layout_width="10dp"
-            android:layout_height="10dp"
-            android:layout_marginTop="30dp"
-            android:src="@drawable/tether"
-            />
-
-        <ImageView
-            android:layout_width="10dp"
-            android:layout_height="10dp"
-            android:layout_marginTop="50dp"
-            android:src="@drawable/tether"
-            />
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rates"
+            android:contentDescription="@string/label_icon"/>
 
     </FrameLayout>
 
